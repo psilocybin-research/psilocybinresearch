@@ -4,10 +4,16 @@ Access versioned public bibliographic metadata from Psilocybin-Research.com in R
 The package verifies snapshot checksums, retains provenance and supports offline
 reuse of completed downloads. It contains no account or personal data.
 
-Install the release source archive with `install.packages("psilocybinresearch_0.1.0.tar.gz", repos = NULL, type = "source")` after installing `jsonlite` and `digest` from CRAN. This package is not on CRAN.
+Requires R 4.1 or later. Install the pinned release directly from GitHub (not CRAN):
 
 ```r
+install.packages(c("jsonlite", "digest"), repos = "https://cloud.r-project.org")
+install.packages(
+  "https://github.com/psilocybin-research/psilocybinresearch/releases/download/v0.1.0/psilocybinresearch_0.1.0.tar.gz",
+  repos = NULL, type = "source"
+)
 library(psilocybinresearch)
+
 m <- research_manifest()
 download_snapshot("snapshot-001", m)
 x <- read_snapshot("snapshot-001")

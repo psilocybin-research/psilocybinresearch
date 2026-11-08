@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: Please cite this software and the exact dataset snapshot used in your analysis.
+title: 'psilocybinresearch: Access Versioned Public Psilocybin Research Metadata'
+type: software
+version: 0.1.0
+date-released: '2026-11-08'
+authors:
+  - family-names: Germann
+    given-names: Christopher B.
+    orcid: 'https://orcid.org/0000-0002-1573-4651'
+license: MIT
+repository-code: 'https://github.com/psilocybin-research/psilocybinresearch'

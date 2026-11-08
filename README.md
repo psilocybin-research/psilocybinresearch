@@ -36,3 +36,5 @@ the same study. Consult the dataset's rights and source metadata before reuse.
 MIT licence applies to package code; dataset/source rights are separate.
 
 A guided browser alternative is available at the [Shinylive research explorer](https://psilocybin-research.com/shinyapp-live). It uses a dated public snapshot and remains separate from this data-access package.
+
+An optional [visNetwork example](examples/visnetwork/) links authors, papers and observed citations, with graph exports and separate snapshot/live-query provenance.

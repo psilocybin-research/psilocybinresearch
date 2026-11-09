@@ -7,7 +7,12 @@ date-released: '2026-11-09'
 authors:
   - family-names: Germann
     given-names: Christopher B.
+    email: christopher.germann@uni-wh.de
     orcid: 'https://orcid.org/0000-0002-1573-4651'
 license: MIT
 repository-code: 'https://github.com/psilocybin-research/psilocybinresearch'
 url: 'https://psilocybin-research.com/'
+contact:
+  - family-names: Germann
+    given-names: Christopher B.
+    email: info@psilocybin-research.com

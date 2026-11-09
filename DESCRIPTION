@@ -14,3 +14,4 @@ Depends: R (>= 4.1.0)
 Imports: jsonlite, digest
 URL: https://psilocybin-research.com/r-analysis/, https://github.com/psilocybin-research/psilocybinresearch
 BugReports: https://github.com/psilocybin-research/psilocybinresearch/issues
+Contact: Christopher B. Germann <info@psilocybin-research.com>

@@ -1,8 +1,8 @@
 Package: psilocybinresearch
 Type: Package
 Title: Access Versioned Public Psilocybin Research Metadata
-Version: 0.1.0
-Authors@R: person("Christopher B.", "Germann", role = c("aut", "cre"), email = "mail@christopher-germann.de", comment = c(ORCID = "0000-0002-1573-4651"))
+Version: 0.1.1
+Authors@R: person("Christopher B.", "Germann", role = c("aut", "cre"), email = "christopher.germann@uni-wh.de", comment = c(ORCID = "0000-0002-1573-4651"))
 Description: Downloads and verifies versioned public bibliographic metadata from
     Psilocybin-Research.com. Preserves snapshot provenance and SHA-256 checksums,
     reads verified R data files, and summarises annual record counts. The catalogue

@@ -1,1 +1,1 @@
-bibentry(bibtype="Manual", title="psilocybinresearch: Access Versioned Public Psilocybin Research Metadata", author=person("Christopher B.","Germann"), year="2026", note="R package version 0.1.0", url="https://github.com/psilocybin-research/psilocybinresearch")
+bibentry(bibtype="Manual", title="psilocybinresearch: Access Versioned Public Psilocybin Research Metadata", author=person("Christopher B.","Germann"), year="2026", note="R package version 0.1.1", url="https://github.com/psilocybin-research/psilocybinresearch")

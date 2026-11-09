@@ -1,3 +1,8 @@
+# psilocybinresearch 0.1.2
+
+* Make the catalogue URL clickable in DESCRIPTION.
+* Use an absolute GitHub URL for the optional visNetwork example excluded from the source archive.
+
 # psilocybinresearch 0.1.1
 
 * Update the maintainer contact address for CRAN submission and provide an alternate project contact.

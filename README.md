@@ -21,7 +21,7 @@ annual_counts(x)
 snapshot_citation(x)
 ```
 
-Source installation of missing dependencies requires suitable build tools (Rtools on Windows; command-line developer tools on macOS). The package itself contains no compiled code. The [version-pinned GitHub archive](https://github.com/psilocybin-research/psilocybinresearch/releases/download/v0.1.0/psilocybinresearch_0.1.0.tar.gz) remains available for reproducible installation.
+Source installation of missing dependencies requires suitable build tools (Rtools on Windows; command-line developer tools on macOS). The package itself contains no compiled code. The [version-pinned GitHub archive](https://github.com/psilocybin-research/psilocybinresearch/releases/download/v0.1.1/psilocybinresearch_0.1.1.tar.gz) remains available for reproducible installation.
 
 Keep the download directory, manifest and package version with your analysis.
 Existing directories are never overwritten. Reopening a snapshot verifies its
@@ -39,7 +39,7 @@ MIT licence applies to package code; dataset/source rights are separate.
 
 A guided browser alternative is available at the [Shinylive research explorer](https://psilocybin-research.com/shinyapp-live). It uses a dated public snapshot and remains separate from this data-access package.
 
-An optional [visNetwork example](examples/visnetwork/) links authors, papers and observed citations, with graph exports and separate snapshot/live-query provenance.
+An optional [visNetwork example](https://github.com/psilocybin-research/psilocybinresearch/tree/main/examples/visnetwork) links authors, papers and observed citations, with graph exports and separate snapshot/live-query provenance.
 
 Maintainer: Christopher B. Germann <christopher.germann@uni-wh.de>.
 Alternate project contact: <info@psilocybin-research.com>.

@@ -4,7 +4,7 @@
 }
 .retrieve <- function(url, path) {
   .check_url(url)
-  old <- getOption("HTTPUserAgent"); options(HTTPUserAgent = "psilocybinresearch/0.1.1")
+  old <- getOption("HTTPUserAgent"); options(HTTPUserAgent = "psilocybinresearch/0.1.2")
   on.exit(options(HTTPUserAgent = old))
   status <- utils::download.file(url, path, method = "libcurl", mode = "wb", quiet = TRUE)
   if (status != 0L || file.info(path)$size > 128 * 1024^2) stop("Download failed or exceeds 128 MiB")

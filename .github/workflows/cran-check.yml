@@ -1,0 +1,30 @@
+name: CRAN release archive check
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Published release version to check
+        required: true
+        default: '0.1.1'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: windows-latest
+    env:
+      _R_CHECK_CRAN_INCOMING_REMOTE_: 'false'
+      RELEASE_VERSION: ${{ inputs.version }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: r-lib/actions/setup-r@f9a764fea8d5c63df6ef9a5c7795bf7deb5d7e05
+        with:
+          r-version: devel
+      - name: Install check dependencies
+        run: Rscript -e 'install.packages(c("jsonlite", "digest"), repos="https://cloud.r-project.org")'
+      - name: Download exact release archive
+        run: |
+          Rscript -e 'v <- Sys.getenv("RELEASE_VERSION"); stopifnot(grepl("^[0-9]+[.][0-9]+[.][0-9]+$", v)); download.file(sprintf("https://github.com/psilocybin-research/psilocybinresearch/releases/download/v%s/psilocybinresearch_%s.tar.gz", v, v), "package.tar.gz", mode="wb")'
+      - name: Check with current R-devel
+        run: R CMD check --as-cran --no-manual package.tar.gz
